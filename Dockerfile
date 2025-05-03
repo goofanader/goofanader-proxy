@@ -5,7 +5,7 @@ FROM node:latest
 WORKDIR /app
 
 # Clone le repo depuis GitHub
-RUN git clone https://github.com/gnuns/AllOrigins .
+RUN git clone https://github.com/goofanader/goofanader-proxy/ .
 
 # Installe les dépendances
 RUN npm install
