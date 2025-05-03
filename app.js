@@ -4,6 +4,7 @@
  * http://github.com/gnuns
  */
 const express = require('express')
+const nocache = require('nocache');
 
 const { version } = require('./package.json')
 // yep, global. it's ok
@@ -35,6 +36,7 @@ module.exports = (function app() {
   app.disable('x-powered-by')
   app.enable("trust proxy")
   app.use(enableCORS)
+  app.use(nocache())
 
   app.all('/:format(get|raw|json|info)', processRequest)
 
