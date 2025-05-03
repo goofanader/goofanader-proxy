@@ -2,7 +2,7 @@
 FROM node:latest
 
 # Crée un répertoire de travail
-#WORKDIR /app
+WORKDIR /app
 
 # Clone le repo depuis GitHub
 #RUN git clone https://github.com/gnuns/AllOrigins .
